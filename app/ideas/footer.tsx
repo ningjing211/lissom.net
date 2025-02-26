@@ -23,14 +23,17 @@ export default function Footer() {
                 <div className="footer-group-left">
                     <div className="footer__addr">
                         <h1 className="footer__logo">
-                            <a href="/">
+                            <a href="/" className="footer-logo-desktop">
                                 <img src="/footer-logo.png" alt="Footer Logo" />
+                            </a>
+                            <a href="/" className="footer-logo-mobile">
+                                <img className="footer-img-mobile" src="/footer-logo-2.png" alt="Footer Logo" />
                             </a>
                         </h1>
                         <br />
                         <div className="footer-outer-wrap">
                             <div className="footer-item-wrap">
-                                <h2>Address -</h2>
+                                <h2>Address</h2>
                                 <address className="address">
                                     台南市安平區健康三街237號B1
                                     <br /><br />
@@ -73,8 +76,14 @@ export default function Footer() {
                         <a className="footer__btn" href="mailto:pmp@conflux-tech.com">
                             Contact
                         </a>
-                        
                     </div>
+                    <div className="footer-btn-group share-group">
+                        <p className="footer-label label-desktop">讚美好因為你滾動~</p>
+                        <a className="footer__btn" href="mailto:pmp@conflux-tech.com">
+                            Share
+                        </a>
+                    </div>
+                    <p className="footer-label label-mobile">讚美好因為你滾動~</p>
                     <div className="footer-legal-group">
                         <div className="legal">
                             <div className="legal__links">

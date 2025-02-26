@@ -12,7 +12,7 @@ export default function Wall() {
                     Timeless  
                 </div>
                 <div className="spacer-tiny" />
-                <h2 className="heading-style-h4  alice-regular">
+                <h2 className="heading-style-h4 alice-regular">
                     Curated & Aesthetics
                 </h2>
                 <div className="stage">

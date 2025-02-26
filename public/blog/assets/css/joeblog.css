@@ -11854,7 +11854,7 @@ p{
 }
 .logo {
   width: 100%;
-  padding: 12px 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -11865,14 +11865,13 @@ p{
 .logo-link{
   display: flex;
   font-size: 1.2em;
-  max-width: 330px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  max-width: 194px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: var(--dark-color);
   font-weight: 600;
   letter-spacing: .125em;
   text-transform: uppercase;
-  
 }
 .header-nav{
   align-items: center;
@@ -12034,7 +12033,7 @@ color: #e8e5e1;
     position: relative;
   }
   .header-menu-link {
-    color: rgb(10, 132, 180);
+    color: #322a24;
     padding: 0;
     width: 100%;
     display: block;
@@ -12251,7 +12250,7 @@ body {
 /* Add to footer.css */
 .back-to-top-btn {
   position: relative;
-  background-color: #76a9bc;
+  background-color: #58534c;
   color: #e8e5e1;
   border: none;
   padding: 9px 14px;
@@ -12362,7 +12361,7 @@ body {
   .footer {
     display: block;
     padding: 30px;
-    background-image: url('/mobile-footer-2.jpg');
+    /* background-image: url('/mobile-footer-2.jpg'); */
     background-position: 1%;
     margin: 00 0 0;
     border-radius: 0;

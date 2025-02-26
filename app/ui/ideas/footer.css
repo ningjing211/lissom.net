@@ -23,7 +23,14 @@ body {
   padding: 70px 100px 70px 100px;
   color: #2f2f2f;
   /* background-image: url('/footer-bg-2.png');   */
-    background-color: #59534d;
+  background-color: #59534d;
+  background: rgb(181,165,146);
+  background: linear-gradient(200deg, rgba(181,165,146,1) 0%, rgba(58,51,39,1) 86%);
+}
+
+.label-mobile,
+.footer-logo-mobile {
+  display: none;
 }
 
 .footer > * {
@@ -32,14 +39,14 @@ body {
 }
 
 .footer-group-left {
-  flex: 3;
+  flex: 2.8;
 }
 
 .footer-group-right {
   display: flex;
   flex-direction: column;
   align-items: end;
-  flex: 1;
+  flex: 1.2;
 }
 
 .footer-outer-wrap {
@@ -92,6 +99,9 @@ body {
   gap: 20px;
   flex: 3;
 }
+.share-group {
+  margin-bottom: 28px;
+}
 
 .footer-legal-group {
   display: flex;
@@ -104,7 +114,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: max-content;
   background-color: #e8e5e1;
   color: #3a3a3a;
   border-radius: 6px;
@@ -115,6 +124,11 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   padding: 1.5em 1.8em;
+  width: 120px;
+}
+
+.footer-label {
+  font-size: 1em;
 }
 
 .footer ul {
@@ -178,7 +192,7 @@ body {
 /* Add to footer.css */
 .back-to-top-btn {
   position: relative;
-  background-color: #76a9bc;
+  background-color: #58534c;
   color: #e8e5e1;
   border: none;
   padding: 9px 14px;
@@ -286,22 +300,50 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+
+  .share-group {
+    margin-bottom: 0;
+  }
+
+  .label-mobile {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .label-mobile,
+  .footer-logo-mobile {
+    display: flex;
+  }
+  .label-desktop,
+  .footer-logo-desktop {
+    display: none !important; 
+  }
+
+  .footer-img-mobile {
+    width: 60%;
+  }
+
   .footer {
     display: block;
     padding: 30px;
-    background-image: url('/mobile-footer-2.jpg');
+    /* background-image: url('/mobile-footer-2.jpg'); */
     background-position: 1%;
     margin: 00 0 0;
     border-radius: 0;
+    background: rgb(181,165,146);
+    background: linear-gradient(7deg, rgba(181,165,146,1) 0%, rgba(58,51,39,1) 78%);  
   }
 
   .footer__logo {
     margin-top: 20px;
     max-width: 240px;
+    margin: 0 auto;
   }
 
   .footer__addr {
+    text-align: center;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .footer__logo a {
@@ -313,6 +355,8 @@ body {
     gap: 10px;
     flex-direction: column;
   }
+
+
 
   .footer-outer-wrap {
     margin-top: 0;
@@ -363,8 +407,19 @@ body {
     padding: 24px 0 36px 0;
     justify-content: center;
   }
+
+  .footer__nav > *,
+  .nav__title {
+    margin-right: 0;
+  }
+
+  .nav__title {
+    justify-content: center;
+  }
   
-  
+  .footer ul {
+    justify-content: center;
+  }
   
 }
 

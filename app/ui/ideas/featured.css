@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #888888;
 }
 
-.heading-style-h4  alice-regular {
+.heading-style-h4 {
 
     color: #322A24;
     font-size: 3rem;
@@ -326,7 +326,7 @@ video {
 
 
 @media screen and (max-width: 991px) {
-    .heading-style-h4  alice-regular {
+    .heading-style-h4 {
         font-size: 2.6rem;;
     }
 }
@@ -336,14 +336,16 @@ video {
         padding-top: 1.5rem;
         padding-bottom: .5rem;
     }
-    .heading-style-h4  alice-regular, .heading-style-h6 {
+    .heading-style-h6 {
         display: none;
     }
     .special-section {
         padding-top: 0;
         padding-bottom: 0rem;
     }
-    
+    .heading-style-h4 {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -448,7 +450,7 @@ svg #base4 {
         padding-bottom: 0;
     }
     .wall {
-        top: 52%;
+        top: 47%;
     }
     .work_gallery {
         /* padding-left: 1.2rem;
