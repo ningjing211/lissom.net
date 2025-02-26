@@ -11884,7 +11884,7 @@ p{
 .header-menu{
   flex-wrap: wrap;
   justify-content: center;  
-  padding: .75em 0;
+  padding: 12px 0;
 }
 
 .header-menu-link{
@@ -12458,4 +12458,28 @@ body {
 
 .header-menu-link {
   font-size: 1.4em;
+}
+
+.chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
 }

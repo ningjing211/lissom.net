@@ -15,7 +15,7 @@ export default function Feature() {
                     Presence 
                 </div>
                 <div className="spacer-tiny" />
-                <h2 className="heading-style-h4 alice-regular">
+                <h2 className="heading-style-h4 libre-baskerville-regular">
                    Refined | Visionary | Grace
                 </h2>
                 <div className="spacer-medium" />

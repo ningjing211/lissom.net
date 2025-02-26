@@ -187,3 +187,33 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+section  h2 {
+  font-family: "Libre Baskerville", serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}

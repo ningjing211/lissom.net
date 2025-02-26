@@ -13,6 +13,7 @@ export default function Page() {
             <meta name="msapplication-TileImage" content="/thumbnail-lissom.png" />
             <link rel="icon" href="/thumbnail-lissom.png" sizes="600x600" />
             <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;800;900&display=swap" rel="stylesheet" />
             <link rel="apple-touch-icon" href="/thumbnail-lissom.png" />
             <title>Lissom</title>
