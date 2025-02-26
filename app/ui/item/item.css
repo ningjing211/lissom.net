@@ -1,0 +1,303 @@
+.report-title {
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  line-height: 3rem;
+  margin-bottom: 2.4rem;
+  text-align: right;
+  padding-right: 1rem;
+  border-right: 1.5rem solid #c9c9c9;
+  color: #555;
+}
+
+.report-sub {
+  font-size: 45%;
+  margin-right: .8rem;
+}
+
+/* variables */
+:root {
+  --dark-blue: 51,139,255;
+  --bright-blue: 96,166,255, 0.5;
+  --light-blue: 223,231,243;
+
+  --dark-golf: 61,105,66;
+  --bright-golf: 102,178,105;
+
+  --dark-gala: 98,0,151;
+  --bright-gala: 106,37,111;
+  --light-gala: 206,55,75;
+
+  --dark-luxe: 124,35,26;
+  --bright-luxe: 229,65,49;
+  --light-luxe: 241,112,48;
+
+  --dark-run: 140,10,54;
+  --bright-run: 227,41,89;
+  --light-run: 244,182,35;
+
+  --default-image: url(https://images.unsplash.com/photo-1569466126773-842a038eae3e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  --default-position: 50% 50%;
+
+  --golf-image-01: url(https://thancfoundation.org/wp-content/uploads/2017/09/golf-course-1103359_1920-sm.jpg);
+  --golf-position-01: center bottom;
+
+  --golf-image-02: url(http://www.hotelbendinat.es/wp-content/uploads/2015/01/bg_golf3.jpg);
+  --golf-position-02: center bottom;
+
+  --gala-image: url(http://www.fauchon-receptions.fr/wp-content/uploads/2015/10/opera-garnier-diner-1.jpg);
+  --gala-position: center top;
+
+  --run-image: url(https://www.autodesk.com/products/eagle/blog/wp-content/uploads/2017/02/shutterstock_385057642.jpg);
+  --run-position: 25% 35%;
+
+  --luxe-image: url(https://dispatcheseurope.com/wp-content/uploads/2016/04/Luxury-Shopping-Mazza-Gallerie-21.jpg);
+  --luxe-position: left bottom;
+}
+
+/* h1,
+p {
+  margin: 0 0 1rem 0;
+} */
+
+
+
+p.item-date {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: .5rem;
+}
+
+h2.item-title {
+  color: rgb(89,89,89);
+  line-height: calc(1.2em + .5vw);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+p.item-words {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+p.item-btn {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+
+a.primary, a.secondary {
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  margin: .3125rem;
+  border: none;
+  border-radius: .3125rem;
+  background-color: rgb(var(--bright-blue));
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  font-size: calc(12px + (24 - 16) * (50vw - 320px)/ (1500 - 320));
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+a.primary:hover, a.primary:active, a.primary:focus {
+  background-color: rgb(var(--dark-blue));
+}
+a.secondary {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 .125rem rgb(var(--bright-blue));
+  color: rgb(var(--bright-blue));
+}
+a.secondary:hover, a.secondary:active, a.secondary:focus {
+  box-shadow: inset 0 0 0 .125rem rgb(var(--dark-blue));
+  color: rgb(var(--dark-blue));
+}
+a.dominant {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 1.2rem;
+  display: flex;
+  flex-wrap: wrap; /* ======= no grid support? */
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr; /* fixed 3 column grid */
+  grid-gap: 1.8rem;
+  grid-column: 1/7;
+}
+
+
+.panel {
+  margin-left: .3125rem;
+  margin-right: .3125rem;
+  flex: 1 1 18.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.panel:first-of-type {
+  grid-column-end: span 2;
+}
+.panel.highlight {
+  box-shadow: none;
+}
+
+.highlight:after {
+  content: "";
+  position: absolute;
+  bottom: -.15rem;
+  left: -.15rem;
+  border-radius: .4375rem;
+  z-index: -1;
+}
+.highlight:after {
+  right: -.125rem;
+  left: -.125rem;
+  height: calc(100% + .1rem);
+  background-image: linear-gradient(-45deg, rgb(var(--light-blue)) 0%, rgb(210,210,210) 100%);
+}
+
+.secondlight {
+  border-left: 1.2375rem solid rgb(190, 190, 190);
+  border-right: 1.2375rem solid rgb(190, 190, 190);
+}
+
+
+
+.featured-image {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  align-content: flex-end;
+  width: calc(100% + 3.85rem);
+  height: 40vh;
+  background: #bbb;
+  margin-bottom: 1.2rem;
+  border-radius: .5rem .5rem 0 0;
+  margin-left: -1.925rem;
+  margin-top: -1.925rem;
+  padding-bottom: 1.2rem;
+  background-position: 0 0 , var(--default-position);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#news .featured-image { /* may be redundant. keep an eye on this */
+	background-image: linear-gradient(-45deg, transparent 0%, rgb(var(--bright-blue)) 100%), var(--default-image);
+}
+#events .featured-image { /* may be redundant. keep an eye on this */
+	background-image: linear-gradient(-45deg, rgba(var(--light-blue), .8) 0%, rgba(var(--bright-blue), .8) 100%), var(--default-image);
+}
+#events .gala .featured-image {
+	background-image: linear-gradient(-45deg, rgba(var(--dark-gala), .8) 0%, rgba(var(--bright-gala), .8) 100%), var(--gala-image);
+  background-position: 0 0 , var(--gala-position);
+}
+#events .golf-chi .featured-image {
+	background-image: linear-gradient(-45deg, rgba(var(--dark-golf), .8) 0%, rgba(var(--bright-golf), .8) 100%), var(--golf-image-01);
+  background-position: 0 0 , var(--golf-position-01);
+}
+#events .golf-ny .featured-image {
+	background-image: linear-gradient(-45deg, rgba(var(--dark-golf), .8) 0%, rgba(var(--bright-golf), .8) 100%), var(--golf-image-02);
+  background-position: 0 0 , var(--golf-position-02);
+}
+#events .luxe .featured-image {
+	background-image: linear-gradient(-45deg, rgba(var(--light-luxe), .8) 0%, rgba(var(--bright-luxe), .8) 100%), var(--luxe-image);
+  background-position: 0 0 , var(--luxe-position);
+}
+#events .run .featured-image {
+	background-image: linear-gradient(155deg, rgba(var(--light-run), .85) 0%, rgba(var(--bright-run), .85) 100%), var(--run-image);
+  background-position: 0 0 , var(--run-position);
+}
+
+#news .panel > p:first-of-type {
+  font-size: 12px;
+  font-size: calc(12px + (24 - 16) * (50vw - 320px)/ (1500 - 320));
+  color: #999;
+  margin-bottom: .5rem;
+  padding-bottom: 0;
+}
+.panel > div + h2, .panel > p + h2 {
+    margin-top: .4rem;
+}
+
+#events .panel > div p {
+  font-size: 12px;
+  font-size: calc(12px + (24 - 16) * (50vw - 320px)/ (1500 - 320));
+  margin: 0 0 .3125rem;
+  position: relative;
+  color: #999;
+}
+#events .panel .featured-image p {
+  color: #fff;
+  font-weight: bold;
+  margin: .6rem 1.8rem 0;
+}
+
+.wrapper > * {
+  background-color: #fff;
+  color: #333;
+  border-radius: .3125rem;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+@supports (display: grid) {
+  .wrapper > * {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    /* margin: 0 10%; */
+    grid-row-gap: 2rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr; /* fixed 2 column grid */
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .panel:first-of-type {
+    grid-column-end: span 1;
+  }
+  #events .panel > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-content: flex-end;
+  }
+ #events .panel > div p {
+     margin: 0 3.6rem .3125rem 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: flex;
+  }
+  .panel {
+    margin: .6rem 0;
+  }
+  #events .panel > div p:nth-of-type(3) {
+    display: none;
+  }
+}

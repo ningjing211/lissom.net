@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'font';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/OakesGrotesk-Semi-Bold.woff.woff2') format('woff2');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/OakesGrotesk-Semi-Bold.woff.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vision {
+    font-family: 'helvetica neue';
+    font-size: 3rem;
+}

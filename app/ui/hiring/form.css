@@ -1,0 +1,187 @@
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 540px; */
+  }
+
+  form header {
+    margin: 0 0 20px 0; 
+  }
+  form header div {
+    font-size: 90%;
+    color: #999;
+  }
+  form header h2 {
+    margin: 0 0 5px 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+  }
+  form > div > fieldset {
+    display: flex;
+    justify-content: center;
+  }
+  #title6,
+  .time-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  form > div > fieldset > div > div {
+    margin: 0 0 5px 0;
+  }
+  form > div > label,
+  legend {
+    display: flex;
+    flex: 1;
+    /* width: 25%; */
+    /* float: left; */
+    margin-bottom: 12px;
+    
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    display: flex;
+    flex: 1;
+    /* float: right; */
+    display: flex;
+  }
+  form > div > fieldset label {
+      font-size: 90%;
+  }
+  fieldset {
+      border: 0;
+    padding: 0;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    height: 36px;
+    color: #333;
+    padding-left: 8px;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea {
+    width: 100%;
+
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    width: 100%;
+    
+  }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=password]:focus,
+  textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+  }
+  textarea {
+    width: 100%;
+    color: #333;
+  }
+
+.choice {
+    margin: 0 6px;
+  }
+
+select {
+    width: 100%;
+    color: #10768a;
+    height: 36px;
+    padding-left: 4px;
+    /* margin-bottom: 24px; */
+}
+
+#title6 {
+    margin-bottom: 12px;
+}
+
+.sub-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+.submit-btn {
+    background-color: #1dcdd4;
+    padding: 12px 16px;
+    min-width: 160px;
+    color: #e8e5e1;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+    border-radius: 4px;
+}
+
+  @media (max-width: 600px) {
+    form > div {
+      margin: 0 0 15px 0; 
+    }
+    form > div > label,
+    legend {
+        width: 100%;
+      float: none;
+      margin: 0 0 5px 0;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+      width: 100%;
+      float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+      width: 100%; 
+    }
+  }
+  @media (min-width: 1200px) {
+    form > div > label,
+      legend {
+        text-align: left;
+    }
+
+  }
+
+  .spinner {
+    position: absolute;
+    top: 60%;
+    left: 41%;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    align-self: center;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

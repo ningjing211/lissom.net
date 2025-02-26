@@ -1,0 +1,160 @@
+.padding-global {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.container-medium, .container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.container-large {
+    width: 100%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.padding-section-medium {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+
+.max-width-xlarge {
+    width: 100%;
+    max-width: 64rem;
+}
+
+.intro-title {
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: SuisseIntl Medium, Arial, sans-serif;
+    font-size: 4.75rem;
+    font-weight: 500;
+    line-height: 105%;
+    color: #322A24;
+}
+
+.spacer-small {
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.max-width-medium {
+    width: 100%;
+    max-width: 70rem;
+    color: #322A24;
+}
+
+.text-size-large {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 3px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+.button-group {
+    grid-column-gap: .75rem;
+    grid-row-gap: .75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+}
+
+.button-regular {
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    background: rgb(192,205,205);
+background: linear-gradient(30deg, rgba(192,205,205,1) 1%, rgba(83,199,200,1) 49%, rgba(76,248,250,1) 100%);
+    color: #e8e5e1;
+    font-family: 'Raleway';
+    font-weight: 500;
+    border-radius: 8px;
+    align-items: center;
+    letter-spacing: 1px;
+    padding: 20px 0 20px 0px;
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    display: flex;
+    min-width: 240px;
+    text-align: center;
+    justify-content: center;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.w-inline-block-another {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 991px) {
+    .padding-global {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .intro-title {
+        font-size: 3rem;;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .padding-section-medium {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .padding-section-medium {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .intro-title {
+        font-size: 2.5rem;;
+    }
+    .spacer-small {
+        padding-top: 1.25rem;
+    }
+    .button-group {
+        width: 160px;
+        flex-direction: row;
+        .see-work {
+            width: 100%;
+        }
+    }
+    .text-size-large {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .intro-title {
+        font-size: 1.3rem;
+    }
+
+    .padding-global {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .padding-section-medium {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .text-size-large {
+        font-size: 1rem;
+    }
+}

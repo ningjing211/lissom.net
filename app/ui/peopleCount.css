@@ -1,0 +1,25 @@
+body {
+    overflow: hidden;
+    color: #9295e2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    mix-blend-mode: screen;
+  }
+  section .people-count {
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  

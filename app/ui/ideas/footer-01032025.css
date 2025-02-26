@@ -1,0 +1,274 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: SuisseIntl Medium, Arial, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #e8e5e1;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 70px 100px 70px 100px;
+    color: #2f2f2f;
+    /* background-image: url('/footer-bg-2.png');   */
+    background-color: #59534d;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+    color: #e8e5e1;
+  }
+
+  .footer-group-left {
+    flex: 3;
+  }
+
+  .footer-group-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex: 1;
+  }
+  
+  .footer-outer-wrap {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: SuisseIntl Medium, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    max-width: 300px;
+  }
+  
+  .footer__addr h2 {
+    font-family: 'Noto Sans TC';
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .nav__title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    color: #333;
+    margin-right: 16px;
+  }
+  
+  .footer address {
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: #555;
+  }
+  
+  .footer-btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 20px;
+    flex: 3;
+  }
+
+  .footer-legal-group {
+    display: flex;
+    flex: 1;
+  }
+
+  .footer__btn {
+    display: flex;
+    letter-spacing: 0;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #3a3a3a;
+    color: #e8e5e1;
+    border-radius: 6px;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1.5em 1.8em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #666;
+  }
+  
+  .nav__ul--extra {
+    column-count: 1;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    color: #e8e5e1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #e8e5e1;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+
+    .footer-item-wrap {
+      position: relative;
+    }
+
+    .footer-item-wrap:first-child {
+      margin-right: 24px;
+    }
+
+    .footer-item-wrap:first-child::after {
+      content: "";
+      position: absolute;
+      top: 40%;  /* 線條位置在 footer 底部 */
+      right: -24px;
+      width: 1px;
+      height: 70%;  /* 線條厚度 */
+      background-color: #ffffff;  /* 線條顏色 */
+    }
+    
+    .nav__item {
+      display: flex;
+    }
+
+    .nav__item {
+      
+    }
+
+    .nav__item--extra {
+      flex-grow: 1;
+    }
+    .nav__item--extra li:last-child {
+      border-right: 1px solid white;
+      padding-right: 28px;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .address {
+      line-height: 22px;
+    }
+    .footer {
+      border-radius: 14px;
+      margin: 20px 0;
+    }
+    .page-nav-group {
+      display: none;
+    }
+    p.legalword {
+      display: none;
+    }
+    .legal {
+      border: 1px solid #b0b0b0;
+      padding: 12px;
+    }
+}
+
+  @media screen and (max-width: 520px) {
+    .footer {
+      background-image: url('/mobile-footer-2.png');
+      background-position: 1%;
+    }
+
+    .footer-btn-group {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .address {
+      line-height: 22px;
+    }
+    .legal {
+      margin-top: 16px;
+      line-height: 24px;
+    }
+
+    
+    
+    .legalword {
+      margin-bottom: 8px;
+    }
+    
+}
+
