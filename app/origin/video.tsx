@@ -4,7 +4,7 @@ export default function Video() {
             className="w-full h-full"
             data-autoplay="true"
             data-loop="true"
-            data-video-url="/ideas/spring-edit.mp4"
+            data-video-url="/ideas/the-spring-edit-desktop.mp4"
             data-wf-ignore="true"
           > 
             <video
@@ -18,7 +18,7 @@ export default function Video() {
               playsInline
             >
               <source
-                src="/ideas/spring-edit.mp4"
+                src="/ideas/the-spring-edit-desktop.mp4"
                 data-wf-ignore="true" type="video/mp4"
               />
             </video>
